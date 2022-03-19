@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">IntPlan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_home"></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ulpKarebosi">ULP karebosi</string>
+    <string name="ulpDaya">ULP daya</string>
+
+    <string-array name="pilihan_tindaklanjut">
+        <item>Pilih tindak lanjut</item>
+        <item>P2TL</item>
+        <item>Ganti KWH Meter</item>
+        <item>Normal</item>
+        <item>Penormalan McB</item>
+        <item>Rumah Kosong</item>
+        <item>Rumah Terkunci</item>
+    </string-array>
+
+    <string-array name="pilihan_indikasi">
+        <item>Pilih indikasi</item>
+        <item>Stan dari Pelanggan</item>
+        <item>Tidak Beli Token</item>
+        <item>KWH Meter Masuk</item>
+        <item>KWH Meter Mundur</item>
+        <item>KWH Maksimum</item>
+    </string-array>
+
+    <string name="textTentangAplikasi">Intplan (Inspeksi to Platinum) adalah alat bantu atau tools untuk mempermudah pelaksanaan dan monitoring sampling pelanggan sesuai DLPD, TO, dan LBKB. </string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:background="#FAFAFA"
+    tools:context=".ui.fragment.pangkep.PangkepFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etSearch"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:endIconMode="clear_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputSearching"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/searching_background"
+            android:hint="Cari Id pelanggan"
+            android:drawableEnd="@drawable/ic_search"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/vectorDaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearch"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_vector_karebosi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSearch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vectorDaya"
+        tools:listitem="@layout/list_pelanggan" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFloat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#fff"
+        android:backgroundTint="@color/primaryColor"
+        android:clickable="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_plus"
+        app:fabCustomSize="50dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnInput"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#EFEFF2"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnFloat"
+        app:layout_constraintEnd_toEndOf="@id/btnFloat"
+        android:src="@drawable/ic_input"
+        app:fabCustomSize="50dp" />
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/lottieAnimationView"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/rvUser"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_fileName="loading2.json"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_repeatCount="10" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

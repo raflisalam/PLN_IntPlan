@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.raflisalam.magang.ui.fragment.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_karebosi"
+        android:name="com.raflisalam.magang.ui.fragment.karebosi.KarebosiFragment"
+        android:label="@string/ulpKarebosi"
+        tools:layout="@layout/fragment_karebosi" />
+
+    <fragment
+        android:id="@+id/nav_daya"
+        android:name="com.raflisalam.magang.ui.fragment.daya.DayaFragment"
+        android:label="@string/ulpDaya"
+        tools:layout="@layout/fragment_daya" />
+
+    <fragment
+        android:id="@+id/nav_maros"
+        android:name="com.raflisalam.magang.ui.fragment.daya.DayaFragment"
+        android:label="ULP Maros"
+        tools:layout="@layout/fragment_maros" />
+
+    <fragment
+        android:id="@+id/nav_pangkep"
+        android:name="com.raflisalam.magang.ui.fragment.pangkep.PangkepFragment"
+        android:label="ULP Pangkep"
+        tools:layout="@layout/fragment_pangkep" />
+
+</navigation>

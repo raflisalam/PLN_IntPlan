@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home Dashboard"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/nav_karebosi"
+            android:title="ULP Karebosi"
+            android:icon="@drawable/ic_building"/>
+        <item
+            android:id="@+id/nav_daya"
+            android:title="ULP Daya"
+            android:icon="@drawable/ic_building"/>
+        <item
+            android:id="@+id/nav_maros"
+            android:title="ULP Maros"
+            android:icon="@drawable/ic_building"/>
+        <item
+            android:id="@+id/nav_pangkep"
+            android:title="ULP Pangkep"
+            android:icon="@drawable/ic_building"/>
+    </group>
+
+    <item android:title="Lainnya">
+        <item
+            android:id="@+id/btnLogout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout"/>
+    </item>
+</menu>
