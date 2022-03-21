@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InputSurveyActivity">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_vector_back"
+        android:background="@drawable/button_back"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/primaryColor"
+        android:text="Input Hasil Survey"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id pelanggan :"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/dataIdpel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etStanSurvey"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:endIconMode="clear_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputStanSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/searching_background"
+            android:hint="Stan Survey"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/primaryColor"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataIdpel"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tagging Survey :"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etStanSurvey"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <ImageButton
+        android:id="@+id/btnGetLocation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_tagging"
+        android:background="@drawable/button"
+        app:tint="#fff"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dapatkan Tagging Lokasi"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@id/btnGetLocation"
+        app:layout_constraintStart_toEndOf="@id/btnGetLocation"
+        app:layout_constraintBottom_toBottomOf="@id/btnGetLocation"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Foto Meter Survey :"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/btnGetLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_img_preview"
+        app:layout_constraintTop_toBottomOf="@+id/tv3"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/tv3"/>
+
+    <ProgressBar
+        android:id="@+id/loadImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toTopOf="@id/imgPreview"
+        app:layout_constraintStart_toEndOf="@id/imgPreview"
+        app:layout_constraintBottom_toBottomOf="@id/imgPreview"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNamaFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Tidak ada foto yang dipilih"
+        android:textColor="#808080"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPilihFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgPreview"
+        app:layout_constraintTop_toTopOf="@id/imgPreview" />
+
+    <TextView
+        android:id="@+id/namaUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="10sp"
+        android:textColor="#808080"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgPreview"
+        app:layout_constraintStart_toStartOf="@id/imgPreview"/>
+
+    <Button
+        android:id="@+id/btnPilihFile"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/loadImage"
+        app:layout_constraintStart_toStartOf="@id/tvNamaFile"
+        app:layout_constraintEnd_toEndOf="@id/tvNamaFile"
+        android:layout_marginTop="10dp"
+        android:text="Upload foto"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="7.5sp"
+        android:background="@drawable/button"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="submit"
+        android:background="@drawable/bg_heading"
+        app:layout_constraintTop_toBottomOf="@+id/imgPreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.raflisalam.magang.api.ApiClient
 import com.raflisalam.magang.model.DataPelanggan
+import com.raflisalam.magang.model.PostResponse
 import com.raflisalam.magang.model.UserResponse
 import retrofit2.Call
 import retrofit2.Callback
@@ -32,4 +33,5 @@ class KarebosiViewModel: ViewModel() {
     fun getDataKarebosi(): LiveData<MutableList<DataPelanggan>> {
         return listDataKarebosi
     }
+
 }

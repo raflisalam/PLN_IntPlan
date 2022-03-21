@@ -3,6 +3,7 @@
     package="com.raflisalam.magang">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -11,11 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Magang">
-        <activity android:name=".ui.detail.DetailPelangganActivity"></activity>
-        <activity android:name=".ui.fragment.pangkep.DetailPangkepActivity" />
-        <activity android:name=".ui.fragment.maros.DetailMarosActivity" />
-        <activity android:name=".ui.fragment.daya.DetailDayaActivity" />
-        <activity android:name=".ui.fragment.karebosi.DetailKarebosiActivity" />
+        <activity android:name=".ui.InputSurveyActivity"></activity>
+        <activity android:name=".ui.detail.DetailPelangganActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

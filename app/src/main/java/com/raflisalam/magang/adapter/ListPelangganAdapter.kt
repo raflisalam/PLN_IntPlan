@@ -12,14 +12,8 @@ import com.raflisalam.magang.ui.detail.DetailPelangganActivity
 
 class ListPelangganAdapter: RecyclerView.Adapter<ListPelangganAdapter.ViewHolder>(), Filterable{
 
-
     private lateinit var listPelanggan: MutableList<DataPelanggan>
     private lateinit var listPelangganFilter: List<DataPelanggan>
-    private lateinit var onItemClickData: OnItemClickData
-
-    fun setOnItemClickData (onItemClickData: OnItemClickData) {
-        this.onItemClickData = onItemClickData
-    }
 
     fun setListPelanggan(data: MutableList<DataPelanggan>) {
         this.listPelanggan = data
@@ -87,15 +81,11 @@ class ListPelangganAdapter: RecyclerView.Adapter<ListPelangganAdapter.ViewHolder
          }
 
         override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
-            listPelanggan.clear()
             if (results != null) {
+                listPelanggan.clear()
                 listPelanggan.addAll(results.values as Collection<DataPelanggan>)
             }
             notifyDataSetChanged()
         }
-    }
-
-    interface OnItemClickData {
-        fun onItemClicked(data: DataPelanggan)
     }
 }
