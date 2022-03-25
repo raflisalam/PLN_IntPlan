@@ -7,7 +7,7 @@ import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
 import com.raflisalam.magang.databinding.ListPelangganBinding
-import com.raflisalam.magang.model.DataPelanggan
+import com.raflisalam.magang.model.spreadsheet.DataPelanggan
 import com.raflisalam.magang.ui.detail.DetailPelangganActivity
 
 class ListPelangganAdapter: RecyclerView.Adapter<ListPelangganAdapter.ViewHolder>(), Filterable{
@@ -70,7 +70,7 @@ class ListPelangganAdapter: RecyclerView.Adapter<ListPelangganAdapter.ViewHolder
             val filteredList: MutableList<DataPelanggan> = ArrayList()
             val filterPattern = charSequence.toString().trim { it <= ' ' }
             for (item in listPelangganFilter) {
-                if (item.idpel?.contains(filterPattern)!!) {
+                if (item.idpel?.contains(filterPattern)!! || item.nama?.contains(filterPattern)!!) {
                     filteredList.add(item)
                 }
             }
@@ -81,10 +81,8 @@ class ListPelangganAdapter: RecyclerView.Adapter<ListPelangganAdapter.ViewHolder
          }
 
         override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
-            if (results != null) {
-                listPelanggan.clear()
-                listPelanggan.addAll(results.values as Collection<DataPelanggan>)
-            }
+            listPelanggan.clear()
+            listPelanggan.addAll(results?.values as Collection<DataPelanggan>)
             notifyDataSetChanged()
         }
     }

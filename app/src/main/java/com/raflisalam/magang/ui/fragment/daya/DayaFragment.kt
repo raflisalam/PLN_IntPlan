@@ -1,6 +1,5 @@
 package com.raflisalam.magang.ui.fragment.daya
 
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -12,9 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.raflisalam.magang.adapter.ListPelangganAdapter
 import com.raflisalam.magang.databinding.FragmentDayaBinding
-import com.raflisalam.magang.model.DataPelanggan
 import com.raflisalam.magang.ui.fragment.daya.viewmodel.DayaViewModel
-import com.raflisalam.magang.ui.fragment.karebosi.viewmodel.KarebosiViewModel
 
 
 class DayaFragment : Fragment() {

@@ -1,6 +1,5 @@
 package com.raflisalam.magang.ui.fragment.karebosi
 
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -12,8 +11,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.raflisalam.magang.adapter.ListPelangganAdapter
 import com.raflisalam.magang.databinding.FragmentKarebosiBinding
-import com.raflisalam.magang.model.DataPelanggan
-import com.raflisalam.magang.ui.detail.DetailPelangganActivity
 import com.raflisalam.magang.ui.fragment.karebosi.viewmodel.KarebosiViewModel
 
 class KarebosiFragment : Fragment() {

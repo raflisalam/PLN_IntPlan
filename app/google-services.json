@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "100596155463",
+    "firebase_url": "https://intel-platinum-401ac-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "intel-platinum-401ac",
+    "storage_bucket": "intel-platinum-401ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100596155463:android:3a59924850f88517e49d62",
+        "android_client_info": {
+          "package_name": "com.raflisalam.magang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100596155463-sokja5vjkmp0qphc64k13594740nqctv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raflisalam.magang",
+            "certificate_hash": "7d18309c258a2e98340c160fda03161e17b8dd8a"
+          }
+        },
+        {
+          "client_id": "100596155463-bo7dnld9lp1fu2p776ig7rbcphfrkuqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqHo3kl_Cuh1m5mwDk8cfYjSV7e7m4bds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100596155463-bo7dnld9lp1fu2p776ig7rbcphfrkuqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

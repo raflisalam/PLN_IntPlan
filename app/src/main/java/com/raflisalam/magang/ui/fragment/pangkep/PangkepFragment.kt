@@ -1,18 +1,14 @@
 package com.raflisalam.magang.ui.fragment.pangkep
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.raflisalam.magang.R
 import com.raflisalam.magang.adapter.ListPelangganAdapter
 import com.raflisalam.magang.databinding.FragmentPangkepBinding
-import com.raflisalam.magang.model.DataPelanggan
 import com.raflisalam.magang.ui.fragment.pangkep.viewmodel.PangkepViewModel
 
 class PangkepFragment : Fragment() {

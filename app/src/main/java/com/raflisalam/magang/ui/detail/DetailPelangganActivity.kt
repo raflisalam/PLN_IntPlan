@@ -12,7 +12,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.raflisalam.magang.R
 import com.raflisalam.magang.databinding.ActivityDetailPelangganBinding
-import com.raflisalam.magang.model.DataPelanggan
+import com.raflisalam.magang.model.spreadsheet.DataPelanggan
 import com.raflisalam.magang.ui.InputSurveyActivity
 
 class DetailPelangganActivity : AppCompatActivity() {
@@ -20,7 +20,6 @@ class DetailPelangganActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailPelangganBinding
     private var clicked: Boolean = false
     private val REQUEST_CALL = 1
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

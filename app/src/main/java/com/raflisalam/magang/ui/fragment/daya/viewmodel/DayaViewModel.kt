@@ -5,8 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.raflisalam.magang.api.ApiClient
-import com.raflisalam.magang.model.DataPelanggan
-import com.raflisalam.magang.model.UserResponse
+import com.raflisalam.magang.model.spreadsheet.DataPelanggan
+import com.raflisalam.magang.model.spreadsheet.UserResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

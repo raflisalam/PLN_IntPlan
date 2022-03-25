@@ -1,6 +1,5 @@
 package com.raflisalam.magang.ui.fragment.maros
 
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -10,10 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.raflisalam.magang.R
 import com.raflisalam.magang.adapter.ListPelangganAdapter
 import com.raflisalam.magang.databinding.FragmentMarosBinding
-import com.raflisalam.magang.model.DataPelanggan
 import com.raflisalam.magang.ui.fragment.maros.viewmodel.MarosViewModel
 
 
@@ -24,8 +21,7 @@ class MarosFragment : Fragment() {
     private lateinit var adapter: ListPelangganAdapter
     private lateinit var viewModel: MarosViewModel
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?,): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?,): View {
         _marosFragment = FragmentMarosBinding.inflate(inflater, container, false)
         return binding.root
     }

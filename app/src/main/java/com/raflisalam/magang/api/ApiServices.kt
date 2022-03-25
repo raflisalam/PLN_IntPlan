@@ -1,7 +1,7 @@
 package com.raflisalam.magang.api
 
-import com.raflisalam.magang.model.PostResponse
-import com.raflisalam.magang.model.UserResponse
+import com.raflisalam.magang.model.spreadsheet.PostResponse
+import com.raflisalam.magang.model.spreadsheet.UserResponse
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
@@ -40,8 +40,81 @@ interface ApiServices {
         @Field("foto_meter") fotoMeter: String,
         @Field("foto_rumah") fotoRumah: String,
         @Field("tindak_lanjut") tindakLanjut: String,
-        @Field("stan_survey") stanSurvey: String
-//        @Field("tagging_survey") taggingSurvey: String,
-//        @Field("foto_meter_survey") fotoSurvey: String
+        @Field("stan_survey") stanSurvey: String,
+        @Field("tagging_survey") taggingSurvey: String,
+        @Field("foto_meter_survey") fotoSurvey: String
+    ): Call<PostResponse>
+
+    @FormUrlEncoded
+    @POST("AKfycbyT6YoNBBhhoNrrWIVo8Cma3DiN3qDcobSFaIHsx50C6nWLbJ1CF7ThMr0eDdc9y13rxQ/exec")
+    fun postDataDaya(
+        @Field("idpel") idpel: String,
+        @Field("unit") unit: String,
+        @Field("nama") nama: String,
+        @Field("alamat") alamat: String,
+        @Field("no_hp") noHp: String,
+        @Field("tarif") tarif: String,
+        @Field("daya") daya: String,
+        @Field("indikasi") indikasi: String,
+        @Field("stan_rek") stanRek: String,
+        @Field("kwh_bln1") kwhBln1: String,
+        @Field("kwh_bln2") kwhBln2: String,
+        @Field("kwh_bln3") kwhBln3: String,
+        @Field("tagging_lokasi") taggingLokasi: String,
+        @Field("foto_meter") fotoMeter: String,
+        @Field("foto_rumah") fotoRumah: String,
+        @Field("tindak_lanjut") tindakLanjut: String,
+        @Field("stan_survey") stanSurvey: String,
+        @Field("tagging_survey") taggingSurvey: String,
+        @Field("foto_meter_survey") fotoSurvey: String
+    ): Call<PostResponse>
+
+    @FormUrlEncoded
+    @POST("AKfycbxJAF1Xe1Gh-f5tCaUeSg1bn3hZTDQBy9n3UMbscqIBPLULceN_DrEZYv5swWMHcSU5kA/exec")
+    fun postDataMaros(
+        @Field("idpel") idpel: String,
+        @Field("unit") unit: String,
+        @Field("nama") nama: String,
+        @Field("alamat") alamat: String,
+        @Field("no_hp") noHp: String,
+        @Field("tarif") tarif: String,
+        @Field("daya") daya: String,
+        @Field("indikasi") indikasi: String,
+        @Field("stan_rek") stanRek: String,
+        @Field("kwh_bln1") kwhBln1: String,
+        @Field("kwh_bln2") kwhBln2: String,
+        @Field("kwh_bln3") kwhBln3: String,
+        @Field("tagging_lokasi") taggingLokasi: String,
+        @Field("foto_meter") fotoMeter: String,
+        @Field("foto_rumah") fotoRumah: String,
+        @Field("tindak_lanjut") tindakLanjut: String,
+        @Field("stan_survey") stanSurvey: String,
+        @Field("tagging_survey") taggingSurvey: String,
+        @Field("foto_meter_survey") fotoSurvey: String
+    ): Call<PostResponse>
+
+
+    @FormUrlEncoded
+    @POST("AKfycbzlClZcdbbor3e6oKIDy67KR7VrTZJAf-5PcYRGBYEpf5UI7AAQT90eEAbgX8WIMyI-/exec")
+    fun postDataPangkep(
+        @Field("idpel") idpel: String,
+        @Field("unit") unit: String,
+        @Field("nama") nama: String,
+        @Field("alamat") alamat: String,
+        @Field("no_hp") noHp: String,
+        @Field("tarif") tarif: String,
+        @Field("daya") daya: String,
+        @Field("indikasi") indikasi: String,
+        @Field("stan_rek") stanRek: String,
+        @Field("kwh_bln1") kwhBln1: String,
+        @Field("kwh_bln2") kwhBln2: String,
+        @Field("kwh_bln3") kwhBln3: String,
+        @Field("tagging_lokasi") taggingLokasi: String,
+        @Field("foto_meter") fotoMeter: String,
+        @Field("foto_rumah") fotoRumah: String,
+        @Field("tindak_lanjut") tindakLanjut: String,
+        @Field("stan_survey") stanSurvey: String,
+        @Field("tagging_survey") taggingSurvey: String,
+        @Field("foto_meter_survey") fotoSurvey: String
     ): Call<PostResponse>
 }
